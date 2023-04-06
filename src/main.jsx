@@ -11,6 +11,7 @@ import About from './component/About/About';
 import Contact from './component/Contact/Contact';
 import Header from './component/Header/Header';
 import ErrorPage from './component/ErrorPage/ErrorPage';
+import MealDb from './component/MealDb/MealDb';
 
 // const router = createBrowserRouter([
 //   {
@@ -33,7 +34,12 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/mealDb',
+        element: <MealDb></MealDb>
       }
+
     ]
   }
 ])
