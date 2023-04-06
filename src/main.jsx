@@ -10,19 +10,13 @@ import Home from './component/Home/Home';
 import About from './component/About/About';
 import Contact from './component/Contact/Contact';
 import Header from './component/Header/Header';
+import ErrorPage from './component/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>
-  },
-  {
-    path: '/about',
-    element: <About></About>
-  },
-  {
-    path: 'contact',
-    element: <Contact></Contact>
+    element: <About></About>,
+    errorElement: <ErrorPage></ErrorPage>
   }
 ])
 
